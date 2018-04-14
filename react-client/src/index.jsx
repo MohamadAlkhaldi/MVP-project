@@ -13,10 +13,13 @@ class App extends React.Component {
 
   componentDidMount() {
     $.ajax({
+      type: 'GET',
       url: '/items', 
       success: (data) => {
+      console.log(data.articles)
+        //alert('success')
         this.setState({
-          items: data
+          items: data.articles
         })
       },
       error: (err) => {
@@ -27,7 +30,9 @@ class App extends React.Component {
 
   render () {
     return (<div>
-      <h1>Item List</h1>
+      <div style={{textAlign : 'center', fontSize:50}}>
+      THE NEWS STAND
+      </div>
       <List items={this.state.items}/>
     </div>)
   }

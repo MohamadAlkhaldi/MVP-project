@@ -3,8 +3,8 @@ import ListItem from './ListItem.jsx';
 
 const List = (props) => (
   <div>
-    <h4> List Component </h4>
-    There are { props.items.length } items.
+    <h2> Recent headlines </h2>
+    <h3>We choosed { props.items.length } articles for you:</h3>
     { props.items.map(item => <ListItem item={item}/>)}
   </div>
 )
