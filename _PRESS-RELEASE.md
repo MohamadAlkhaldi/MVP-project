@@ -17,28 +17,28 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  > The news stand.
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  > The most recent threads from all over the world.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > The news stand is designed to make breaking news in one click away, here you can navigate recent headlines, read articles and save the interesting ones.
 
 ## Problem ##
-  > Describe the problem your product solves.
+  > No time for checking general news.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  > We made global news one click away.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  > We are independent, unbiased and authentic.
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  > Reactjs for front-end, express backend, mongo database andn google news API.
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  > Since the news stand is doing the hard part for me, fifteen minutes every morning are enough to keep posted.
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  > We are sure you will get what came for by going to our home page.
