@@ -7,8 +7,10 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
-      items: []
+      items: [],
+      archive: 0
     }
+    this.retArchive = this.retArchive.bind(this);
   }
 
   componentDidMount() {
@@ -34,7 +36,7 @@ class App extends React.Component {
       url: '/archive', 
       data: data,
       success: (d) => {
-      console.log(d)
+      console.log('Success!')
       },
       error: (err) => {
         console.log('err', err);
@@ -47,7 +49,9 @@ class App extends React.Component {
       type: 'GET',
       url: '/archive', 
       success: (d) => {
-      console.log(d)
+      this.setState({
+      archive: d.length
+      })
       },
       error: (err) => {
         console.log('err', err);
@@ -63,7 +67,7 @@ class App extends React.Component {
       padding: "20px", fontStyle: 'bold'}}>
       THE NEWS STAND
       </div>
-      <List items={this.state.items} arch={this.saveArchive} rearch={this.retArchive}/>
+      <List items={this.state.items} arch={this.saveArchive} rearch={this.retArchive} a={this.state.archive}/>
     </div>)
   }
 }
