@@ -6,18 +6,20 @@ const ListItem = (props) => {
 	};
 
 	return(
-  <div>
+  <div >
   	
-    <div style={{fontSize: 30}}>
+    <div style={{fontSize: 30}} >
     { props.item.title }
-    <a href={props.item.url}>--></a>
+    <a href={props.item.url} >--></a>
     </div>
 
-    <div style={{color: 'gray', fontStyle: 'italic'}}>
+    <div style={{color: 'gray', fontStyle: 'italic', fontSize: 20}}>
     { props.item.description }
     </div>
 
-    <div>{ props.item.publishedAt }</div>
+    <div>{ props.item.publishedAt }
+    <button style={{fontSize: 15}} onClick={props.arch.bind(this, props.item)}>Save</button>
+    </div>
     <br></br>
   </div>
 )}
